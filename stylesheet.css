@@ -160,3 +160,39 @@ footer p {
   color: #fff;
 }
 
+/*CONTACT FORM SECTION*/
+section#contact
+{margin-top: 40px;}
+
+form {max-width: 400px;
+margin: 0 auto;
+}
+
+label {
+  display:block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom:5px;
+  border: 2px solid #dda0dd;
+  border-radius: 5px;
+}
+
+button[type="submit"]{
+  background-color: #dda0dd;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+button[type="submit"]:hover{
+background-color: #dda0dda1;
+}
