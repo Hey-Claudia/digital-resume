@@ -9,7 +9,7 @@ body {
 #header {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(Images/pexels-anni-roenkae-2156881.jpg);
+    url(Images/background.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -205,4 +205,60 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #dda0dda1;
+}
+
+
+
+/*MEDIA QUERY for tablets and large phones*/
+@media (max-width: 768px) {
+
+  .userbox img {
+    width: 150px; 
+  }
+
+  .userbox h1 {
+    font-size: 24px; 
+  }
+
+  .main-body {
+    padding: 10px; 
+  }
+
+  h2 {
+    font-size: 20px; 
+  }
+
+  h3 {
+    font-size: 16px; 
+  }
+
+  ul.navbar {
+    flex-direction: column; 
+  }
+
+  li.nav-item a {
+    padding: 10px; /
+  }
+
+}
+
+/*MEDIA QUERY for smaller phones*/
+@media (max-width: 480px) {
+
+  .userbox img {
+    width: 120px; 
+  }
+
+  .userbox h1 {
+    font-size: 20px; 
+  }
+
+  h2 {
+    font-size: 18px; 
+  }
+
+  h3 {
+    font-size: 14px; 
+  }
+
 }

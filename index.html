@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Claudia Hesse Resume</title>
     <link rel="stylesheet" href="stylesheet.css" />
-    <link rel="icon" type="image/x-icon" href="Images/favicon.ico"
+    <link rel="icon" type="image/x-icon" href="Images/Favicon1.svg"/>
+    
+    
   </head>
 
   <body>
@@ -110,37 +112,55 @@
     <!-------------FOOTER SECTION-------------->
     <footer>
       <p>Connect with me on:</p>
-      <span class="icon-links">
-        <a
-          href="https://www.linkedin.com/in/your-linkedin-profile"
-          target="_blank"
-        >
-          <img src="Images/linkedin.png" alt="Linkedin"
+    <span class="icon-links">
+        <a href="https://www.linkedin.com/in/claudia-hesse-787398115/" target="_blank">
+            <img src="Images/linkedin.png" alt="Linkedin" />
         </a>
-      
-      <a href="https://github.com/Hey-Claudia" target="_blank"
-        ><img src="Images/github-sign.png" alt="Github" />
-      </a>
+        <a href="https://github.com/Hey-Claudia" target="_blank">
+            <img src="Images/github-sign.png" alt="Github" />
+        </a>
     </span>
     <div class="contact-info">
-      <p>Email: chclaudiahesse@gmail.com</p>
-      <p>Phone: +27817707103</p>
-  </div>
+        <p>Email: chclaudiahesse@gmail.com</p>
+        <p>Phone: +27817707103</p>
+    </div>
 
       <!-------------FORM SECTION-------------->
       <section>
         <h2 id="Contact">Contact Me</h2>
         <form action="https://formsubmit.co/chclaudiahesse@gmail.com" method="POST">
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
+    
+            <!-- Name Field -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required maxlength="50" />
+    
+            <!-- Email Field -->
+            <label for="email">Your Email:</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="example@email.com" 
+                required 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
+            />
+    
+            <!-- Phone Field -->
+            <label for="phone">Your Phone (optional):</label>
+            <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="1234567890" 
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            />
+    
+            <!-- Message Field -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message here..." required maxlength="500"></textarea>
+    
+            <button type="submit">Submit</button>
+            </form>
       </section>
     </footer>
   </body>
